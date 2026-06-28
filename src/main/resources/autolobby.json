@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "warning_time_seconds": 180,
+  "logout_time_seconds": 300,
+  "play_sound": true,
+  "sound_volume": 1.0,
+  "sound_pitch": 1.5,
+  "warning_color": "#FF3333",
+  "warning_background_alpha": 0.87,
+  "warning_text_color": "#FFFFFF",
+  "warning_offset_y": -30,
+  "debug_mode": false
+}

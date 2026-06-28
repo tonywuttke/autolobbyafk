@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "autolobby",
+  "version": "${version}",
+  "name": "Auto Lobby AFK",
+  "description": "Automatically returns to lobby if AFK on CityBuild. Prevents getting kicked from CB when idle.",
+  "authors": [
+    "OPSUCHT Team"
+  ],
+  "contact": {
+    "homepage": "https://opsucht.net"
+  },
+  "license": "MIT",
+  "icon": "assets/autolobby/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.opsucht.autolobby.AutoLobbyMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.1"
+  }
+}
