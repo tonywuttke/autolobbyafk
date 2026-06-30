@@ -45,7 +45,7 @@ public class AFKTimer {
         // Nach 5 Minuten → Automatisch zur Lobby
         if (timeSinceLastMovement >= LOGOUT_TIME) {
             LOGGER.info("AFK Logout triggered - executing /lobby command");
-            executeLobbyCcommand();
+            executeLobbyCommand();
             resetTimer();
         }
     }
@@ -63,7 +63,7 @@ public class AFKTimer {
     /**
      * Führt den /lobby Befehl aus
      */
-    private static void executeLobbyCcommand() {
+    private static void executeLobbyCommand() {
         MinecraftClient client = MinecraftClient.getInstance();
         if (client.getNetworkHandler() != null) {
             client.getNetworkHandler().sendChatCommand("lobby");

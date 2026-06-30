@@ -3,10 +3,9 @@ package com.opsucht.autolobby;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.sound.SoundCategory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,7 +42,7 @@ public class WarningHUD {
     /**
      * Rendert die Warning auf dem HUD
      */
-    public static void render(GuiGraphics context, int screenWidth, int screenHeight) {
+    public static void render(DrawContext context, int screenWidth, int screenHeight) {
         if (!isVisible) {
             return;
         }
@@ -90,7 +89,7 @@ public class WarningHUD {
     /**
      * Füllt ein Rechteck mit einer Farbe
      */
-    private static void fill(GuiGraphics context, int x1, int y1, int x2, int y2, int color) {
+    private static void fill(DrawContext context, int x1, int y1, int x2, int y2, int color) {
         context.fill(x1, y1, x2, y2, color);
     }
 
@@ -102,7 +101,7 @@ public class WarningHUD {
         if (client.player != null && client.world != null) {
             try {
                 // Note Block Pling Sound - hohes Pitch für Warning-Effekt
-                PositionedSoundInstance sound = PositionedSoundInstance.master(
+                PositionedSoundInstance sound = PositionedSoundInstance.ui(
                     SoundEvents.BLOCK_NOTE_BLOCK_PLING,
                     1.5f  // Pitch (höher = schriller)
                 );

@@ -20,11 +20,11 @@ public class MovementTracker {
 
         // Array mit allen Bewegungs-Tasten
         KeyBinding[] movementKeys = {
-            client.options.keyForward,      // W
-            client.options.keyBack,         // S
-            client.options.keyLeft,         // A
-            client.options.keyRight,        // D
-            client.options.keyJump          // Space
+            client.options.forwardKey,      // W
+            client.options.backKey,         // S
+            client.options.leftKey,         // A
+            client.options.rightKey,        // D
+            client.options.jumpKey          // Space
         };
 
         // Prüfe ob irgendeine Bewegungs-Taste gedrückt ist
