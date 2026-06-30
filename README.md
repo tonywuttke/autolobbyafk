@@ -35,12 +35,12 @@ Minecraft 1.21.11 Fabric Mod - Automatische Rückkehr zur Lobby nach AFK.
 
 ### 1. JAR-Datei
 ```
-C:\Users\tonyw\AppData\Roaming\.minecraft\labymod-neo\modpacks\opsucht_1774477159972\fabric\1.21.11\mods\
+C:\Users\User\AppData\Roaming\.minecraft\labymod-neo\modpacks\opsucht_1774477159972\fabric\1.21.11\mods\
 ```
 
 ### 2. Config (optional)
 ```
-C:\Users\tonyw\AppData\Roaming\.minecraft\labymod-neo\modpacks\opsucht_1774477159972\fabric\1.21.11\config\
+C:\Users\User\AppData\Roaming\.minecraft\labymod-neo\modpacks\opsucht_1774477159972\fabric\1.21.11\config\
 ```
 Dateiname: `autolobby.json`
 
@@ -73,26 +73,6 @@ Mod wird beim Start geladen!
   "warning_color": "#FF3333",         // Rot
   "warning_text_color": "#FFFFFF"     // Weiß
 }
-```
-
----
-
-## 📝 Dateien in diesem Package
-
-```
-├── SETUP_GUIDE.md              ← START HIER! (IntelliJ Setup)
-├── README.md                   ← Diese Datei
-├── build.gradle                ← Gradle Build-Config
-├── gradle.properties            ← Projekt-Properties
-├── settings.gradle              ← Gradle Settings
-├── fabric.mod.json              ← Mod Manifest
-├── autolobby.json               ← Config Template
-│
-└── Java Source Files:
-    ├── com.opsucht.autolobby.AutoLobbyMod.java       ← Main Entry Point
-    ├── com.opsucht.autolobby.AFKTimer.java           ← Timer-Logik (3min + 5min)
-    ├── com.opsucht.autolobby.MovementTracker.java    ← W/A/S/D/Space Tracking
-    └── com.opsucht.autolobby.WarningHUD.java         ← Warning Display + Sound
 ```
 
 ---
